@@ -1,9 +1,15 @@
 /* GENERAL */
+:root {
+    --font-color: #012622;
+    --primary-color: #909d69;
+    --secondary-color: #dfa1e8;
+
+}
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: pink; /* background of everything*/
+    background-color: var(--primary-color); /* background of everything*/
 }
 img{
     display: block;
@@ -18,35 +24,10 @@ img{
 .mini-words{
     text-align: center;
 }
-img, .mini-words, div{
-    padding: 1rem;
+img, .mini-words, div {
+    padding: 2rem;
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 500px) {
-    .grid-item {
-      font-size: 10px;
-    }
-  }
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 700px) {
-    .grid-item, .words, .mini-words {
-      font-size: 25px;
-      padding: 3rem;
-    }
-  }
-
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 960px) {
-    .grid-item, .words, .mini-word {
-      font-size: 32px;
-    }
-
-    .words, .mini-words {
-        padding: 5rem;
-    }
-  }
-  
 
 
 /* NAVBAR */
@@ -55,7 +36,7 @@ li, a, button { /* all font stuff for logo and nav links */
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
-    color: navy;
+    color: var(--secondary-color);
     transition: all 0.3s ease;
 
 }
@@ -66,14 +47,14 @@ header {
     padding: 10px 1rem 5px 1.5rem; /* top, right, bottom, left*/
     position: sticky;
     top:0;
+    z-index: 1000;
 }
 
-.navbar a {
-    /* make nav all the way to the right!! */
-    color: navy;
+.navbar a, .header-logo {
+    color: var(--font-color);
 }
 .navbar a:hover {
-    color: whitesmoke;
+    color: var(--secondary-color);
 }
 .nav_links li {
     display: inline-block;
@@ -95,44 +76,52 @@ button :hover {
 
 
 /* GRID */
+
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    margin-bottom: 10%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1%;
+}
+@media (max-width: 960px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr; /* Stack items vertically */
+    }
 }
 .grid-item {
-    /* background-color: lightblue; */
+    position: relative;
 }
 
 
 /* LANDING PAGE */
-#Landing, #Reminders {
+#Landing {
     padding: 5% 0px 0px;
 }
 
 /* EXEC - Sorority for women in STEM  */
 
-#study {
-    grid-row: 2 / 4;
-    grid-column: 1 / 2;
-}
 
-#grid-button {
+.grid-text {
+    /* margin-bottom: 2rem; */
+}
+[id*="grid-button"] {
     color: white;
-    background-color: pink;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: 0;
     padding: 5px 10px;
     text-align: center;
     border: 2px solid white;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     cursor: pointer;
     transition:all 0.3s ease 0s;
-    margin: 0px max(5%, min(20px, 5%));
 }
-
 #grid-button:hover {
-    border: 2px solid navy;
-    background-color: navy;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+#text-insteadof-grid-button {
+    border: none;
 }
 
 
