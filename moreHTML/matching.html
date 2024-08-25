@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Algorithm</title>
+</head>
+<link rel="stylesheet" href="/styles.css">
+
+<body>
+    <header>
+        <a href="#" class="header-logo">ΣΔΩ</a>
+
+        <nav class="navbar">
+            <ul class="nav_links">
+                <li><a href="/index.html">NME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div>
+    <section class="bubble-info-section">
+        <h2 class="bubble-info-title">How To Set Up JSON File</h2>
+        <p>The JSON file containing data for the bigs and littles in this recruitment term has a specific layout you must follow to ensure the program can read the data accurately. 
+            There are two ways data can be represented. Curley brackets, {}, which represent objects and square brackets, [], which represent arrays. 
+            Objects are keys that have a value attatched to them. Arrays are a list of values separated by commas. 
+        </p>
+    </section>
+    <section class="bubble-info-section">
+        <h2 class="bubble-info-title">JSON File Structure</h2>
+        <p>
+            The file structure consists of two main sections: "bigs" array and "littles" array. 
+            Both sections contain an array of objects representing the members and associate members involved in the recruitment process.
+            In other words, the "bigs" array will contain a list of all the participating members and the "littles" array will contain all the associate members.
+        </p>
+        <h3>"bigs" Structure</h3>
+        <p>
+            "bigs" is an array of objects. Each object representing a big has a "name", "preferenceSurvey", and "slotsAvailable". 
+            <ul>
+                <li><b>"name": "Big's Name"</b> </li>
+                <li><b>"preferenceSurvey": ["Little 3", "Little 2", "Little 1"]</b> The array of little names that the big prefers in that order.</li>
+                <li><b>"slotsAvailable": #</b> The number of littles a big is willing to take. Either one or two. </li>
+            
+            </ul>
+        </p>
+        <h3>"littles" Structure</h3>
+        <p>
+            "littles" is an array of objects. Each object representing a little has a "name" and "preferenceSurvey". 
+            <ul>
+                <li><b>"name": "Little's Name"</b> </li>
+                <li><b>"preferenceSurvey": ["Big 3", "Big 2", "Big 1"]</b> The key "preferenceSurvey" represents an array of big names that the little prefers in that order.</li>
+            </ul>
+        </p>
+        <h2 class="both-bubble-info-title">Sample JSON File</h2>
+        <p>
+            Below is a sample JSON file to get you started. Change the names like Big# and Little# to actual names of the bigs and littles participating. 
+        </p>
+        <a href="data.json" download>Download Sample JSON File</a>
+    </section>
+
+    <section class="bubble-info-section">
+        <h2 class="bubble-info-title">Trouble shooting</h2>
+        <p>
+            <ul>
+                <li>Make sure all names are spelled correctly.</li>
+                <li>Make sure all bigs or littles on a preference survey are on the "bigs" or "littles" array.</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="bubble-info-section">
+        <h2 class="bubble-info-title">How To Upload JSON File</h2>
+        <p>
+            Once all data in your JSON file is updated and accurate, save the file with a .json extension, for example, recruitment_data.json.
+            In the next section of the website, click the Choose File button and select the JSON file you previously saved.  
+            If all went accordingly, the results will display in the below section. 
+        </p>
+    </section>
+
+    <section class="bubble-info-section">
+        <h2 class="bubble-info-title">Upload JSON File</h2>
+        <input type="file" id="jsonFileInput" title="Choose JSON file with Bigs, Littles data">
+    </section>
+
+    <section class="bubble-info-section">
+        <h2 class="bubble-info-title" class = "title">Results:</h2>
+        <div id="results"></div>
+    </section>
+</div>
+
+    <footer>
+        <p>Peas, Pods, Sisterhood, Science</p>
+    </footer>
+    <!-- <script defer type="module" src="matching.js"></script> -->
+    <script src="matching.js"></script>
+
+
+</body>
+</html>

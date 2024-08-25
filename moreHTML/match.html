@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match</title>
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="header-logo">ΣΔΩ</a>
+
+        <nav class="navbar">
+            <ul class="nav_links">
+                <li><a href="/index.html">NME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="passcode-container">
+        <div class="passcode">
+            <h1>Enter Passcode</h1>
+            <form id="passcodeForm">
+                <input type="password" id="passcode" placeholder="Enter your passcode" required>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="errorMessage"></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('passcodeForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const passcode = document.getElementById('passcode').value;
+            const correctPasscode = '1234'; // Replace with your actual passcode
+
+            if (passcode === correctPasscode) {
+                // Redirect or show the protected content
+                window.location.href = 'matching.html';
+            } else {
+                document.getElementById('errorMessage').textContent = 'Incorrect passcode. Please try again.';
+            }
+        });
+    </script>
+
+    
+</body>
+</html>

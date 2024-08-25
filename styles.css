@@ -24,11 +24,10 @@
 body {
     background-color: var(--dark-neutral-color);
 }
-
 section {
     padding-top: 10vh;
 }
-#Landing {
+#NME {
     color: var(--light-neutral-color);
 }
 #Exec {
@@ -150,7 +149,7 @@ button :hover {
 }
 
 
-/* LANDING PAGE */
+/* NME PAGE */
 
 
 /* EXEC - Sorority for women in STEM  */
@@ -204,3 +203,33 @@ button :hover {
 
 /* CREDITS */
 
+
+
+/* MATCHING */
+.bubble-info-title, .both-bubble-info-title {
+    padding-bottom: 10px;
+}
+.both-bubble-info-title /*sample json file title in big bubble needs space.*/
+{
+    padding-top: 15px;
+}
+.passcode-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.passcode, .bubble-info-section {
+    background-color: var(--light-neutral-color);
+    border-radius: 15px;
+
+}
+.bubble-info-section {
+    margin: 20px 0;
+    padding: 20px;
+}
+
+footer {
+    color: var(--light-neutral-color);
+    text-align: center;
+    padding-bottom: 2rem;
+}
