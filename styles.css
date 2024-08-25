@@ -1,16 +1,59 @@
 /* GENERAL */
 :root {
-    --font-color: #012622;
-    --primary-color: #909d69;
-    --secondary-color: #dfa1e8;
+    --dark-neutral-color: #012622; /*monstera green*/
+    --light-neutral-color: #EBDEDA; /*light pink*/
+    --secondary-color: #e5c7cc;
 
+    --light-leaf-color: #909d6a;
+    --dark-leaf-color: #4C5D46;
+
+    --a-color: ;
+    --b-color: ;
+    --c-color: ;
+    --a1-color: ;
+    --b1-color: ;
+    --c1-color: ;
+
+    --terracotta-color: #c29673;
 }
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: var(--primary-color); /* background of everything*/
 }
+body {
+    background-color: var(--dark-neutral-color);
+}
+
+section {
+    padding-top: 10vh;
+}
+#Landing {
+    color: var(--light-neutral-color);
+}
+#Exec {
+    background-color: var(--light-neutral-color);
+}
+#ExecPart2 {
+    background-color: var(--dark-leaf-color);
+    color: var(--light-neutral-color);
+}
+#History {
+    background-color: var(--secondary-color);
+}
+#AcademicSuccess {
+    background-color: var(--light-neutral-color);
+}
+#Socials {
+    background-color: var(--light-neutral-color);
+}
+#Contact {
+
+}
+#Credits {
+
+}
+
 img{
     display: block;
     margin-left: auto;
@@ -18,11 +61,17 @@ img{
     width: 100%;
     height: auto;
 }
+.logo-button :hover {
+    transform: scale(1.1);
+}
 .words {
     padding: 3rem;
+    border: .5px solid var(--terracotta-color);
 }
 .mini-words{
     text-align: center;
+    border: .5px solid var(--terracotta-color);
+
 }
 img, .mini-words, div {
     padding: 2rem;
@@ -34,13 +83,13 @@ img, .mini-words, div {
 
 li, a, button { /* all font stuff for logo and nav links */
     font-weight: 500;
-    font-size: 16px;
     text-decoration: none;
-    color: var(--secondary-color);
-    transition: all 0.3s ease;
+    color: var(--dark-leaf-color);
+    transition: all 0.5s ease;
 
 }
 header {
+    background-color: var(--dark-neutral-color);
     display: flex;
     justify-content: space-between; /* push left and right items to the far edges and the center item will evenly space between the two*/
     align-items: center; /* centers all of the header together*/
@@ -51,10 +100,10 @@ header {
 }
 
 .navbar a, .header-logo {
-    color: var(--font-color);
+    color: var(--light-neutral-color);
 }
 .navbar a:hover {
-    color: var(--secondary-color);
+    text-decoration: underline;
 }
 .nav_links li {
     display: inline-block;
@@ -82,46 +131,50 @@ button :hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 1%;
 }
-@media (max-width: 960px) {
+@media (max-width: 860px) {
     .grid {
         display: grid;
         grid-template-columns: 1fr; /* Stack items vertically */
     }
+
+
 }
 .grid-item {
-    position: relative;
+    position: relative; /* So that buttons can be absolute */
+}
+.grid-title {
+    margin-bottom: 1rem;
+}
+.grid-text {
+    padding-top: 0px;
 }
 
 
 /* LANDING PAGE */
-#Landing {
-    padding: 5% 0px 0px;
-}
+
 
 /* EXEC - Sorority for women in STEM  */
 
-
-.grid-text {
-    /* margin-bottom: 2rem; */
-}
 [id*="grid-button"] {
-    color: white;
-    background-color: var(--primary-color);
+    color: var(--light-neutral-color);
+    /* background-color: var(--dark-neutral-color); */
     position: absolute;
     bottom: 0;
+}
+#grid-button {
     padding: 5px 10px;
     text-align: center;
-    border: 2px solid white;
+    border: 2px solid var(--light-neutral-color);
     /* border-radius: 50px; */
     cursor: pointer;
     transition:all 0.3s ease 0s;
 }
 #grid-button:hover {
-    border: 2px solid var(--secondary-color);
-    background-color: var(--secondary-color);
+    border: 2px solid var(--dark-leaf-color);
+    background-color: var(--dark-leaf-color);
 }
 #text-insteadof-grid-button {
-    border: none;
+    cursor: default;
 }
 
 
@@ -132,3 +185,22 @@ button :hover {
 /* Socials & Networking */
 
 /* Contact */
+#Contact {
+}
+#blinged-logo {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#contact-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 1.8;
+}
+#contact-list :hover {
+    transform: scale(1.1);
+}
+
+/* CREDITS */
+
