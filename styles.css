@@ -154,28 +154,6 @@ button :hover {
 
 /* EXEC - Sorority for women in STEM  */
 
-[id*="grid-button"] {
-    color: var(--light-neutral-color);
-    /* background-color: var(--dark-neutral-color); */
-    position: absolute;
-    bottom: 0;
-}
-#grid-button {
-    padding: 5px 10px;
-    text-align: center;
-    border: 2px solid var(--light-neutral-color);
-    /* border-radius: 50px; */
-    cursor: pointer;
-    transition:all 0.3s ease 0s;
-}
-#grid-button:hover {
-    border: 2px solid var(--dark-leaf-color);
-    background-color: var(--dark-leaf-color);
-}
-#text-insteadof-grid-button {
-    cursor: default;
-}
-
 
 /* HISTORY */
 
@@ -226,6 +204,9 @@ button :hover {
 .bubble-info-section {
     margin: 20px 0;
     padding: 20px;
+}
+.important-link {
+    color: blue;
 }
 
 footer {
