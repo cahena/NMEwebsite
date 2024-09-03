@@ -65,11 +65,13 @@ img{
 }
 .words {
     padding: 2rem;
+    text-align: center;
     border: .5px solid var(--terracotta-color);
+    font-size: 2rem;
 }
 .mini-words{
     text-align: center;
-    border: .5px solid var(--terracotta-color);
+    font-size: 2rem;
 
 }
 img, .mini-words, div {
