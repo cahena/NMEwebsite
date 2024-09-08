@@ -1,8 +1,9 @@
 /* GENERAL */
 :root {
-    --dark-neutral-color: #012622; /*monstera green*/
-    --light-neutral-color: #EBDEDA; /*light pink*/
-    --secondary-color: #e5c7cc;
+    --dark-neutral-color: #4e5e3c; 
+    --light-neutral-color: #EBDEDA; 
+    --secondary-color: #c2bfec;
+    --third-color: #a07ce1;
 
     --light-leaf-color: #909d6a;
     --dark-leaf-color: #4C5D46;
@@ -79,7 +80,6 @@ img, div {
 li, a, button { /* all font stuff for logo and nav links */
     font-weight: 500;
     text-decoration: none;
-    color: var(--dark-leaf-color);
     transition: all 0.5s ease;
 
 }
@@ -107,35 +107,36 @@ header {
 
 
 #button {
-    background-color: aqua;
+    margin: 1rem 0px;
+    padding: .5rem;
+    background-color: var(--secondary-color);
     border: none;
-    border-radius: 50px;
     cursor: pointer;
 }
-#button :hover {
-    background-color: aquamarine;
+#button:hover {
+    background-color: var(--third-color);
+}
+#button:hover a {
+    color: var(--light-neutral-color);
 }
 
 /* https://www.w3schools.com/howto/howto_css_dropdown.asp */
 .drop-button {
-    background-color: #04AA6D;
+    background-color: var(--secondary-color);
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
 }
-
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: var(--light-neutral-color);
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 10000;
 }
 
@@ -151,7 +152,7 @@ header {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .drop-button {
-    background-color: #3e8e41;
+    background-color: var(--light-leaf-color);
 }
 
 /* GRID */
@@ -209,6 +210,20 @@ header {
 
 
 /* MATCHING */
+.bubble-choice-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1%;
+}
+@media (max-width: 800px) {
+    .bubble-choice-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* Stack items vertically */
+    }
+}
+#Upload-JSON-file {
+    background-color: var(--secondary-color);
+}
 .bubble-info-title, .both-bubble-info-title {
     padding-bottom: 10px;
 }

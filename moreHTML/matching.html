@@ -6,7 +6,6 @@
     <title>Matching Algorithm</title>
 </head>
 <link rel="stylesheet" href="/styles.css">
-<script src="/matching.js"></script>
 
 <body>
     <header>
@@ -20,13 +19,26 @@
     </header>
 
 <div>
-    <section class="bubble-info-section">
-        <h2 class="bubble-info-title">How To Set Up JSON File</h2>
-        <p>The JSON file containing data for the bigs and littles in this recruitment term has a specific layout you must follow to ensure the program can read the data accurately. 
-            There are two ways data can be represented. Curley brackets, {}, which represent objects and square brackets, [], which represent arrays. 
-            Objects are keys that have a value attatched to them. Arrays are a list of values separated by commas. 
-        </p>
+    <section class="bubble-choice-grid">
+
+        <div class="bubble-info-section">
+            <h2 class="bubble-info-title">Already know what to do?</h2>
+            <p>Skip to: </p>
+            <button id="button">
+                <a href="#Upload-JSON-file">UPLOAD FILE</a>
+            </button>
+        </div>
+
+        <div class="bubble-info-section">
+                <h2 class="bubble-info-title">How To Set Up JSON File</h2>
+                <p>The JSON file containing data for the bigs and littles in this recruitment term has a specific layout you must follow to ensure the program can read the data accurately. 
+                    There are two ways data can be represented. Curley brackets, {}, which represent objects and square brackets, [], which represent arrays. 
+                    Objects are keys that have a value attatched to them. Arrays are a list of values separated by commas. 
+                </p>
+            </div>
+
     </section>
+
     <section class="bubble-info-section">
         <h2 class="bubble-info-title">JSON File Structure</h2>
         <p>
@@ -78,14 +90,14 @@
         </p>
     </section>
 
-    <section class="bubble-info-section">
+    <section class="bubble-info-section" id="Upload-JSON-file">
         <h2 class="bubble-info-title">Upload JSON File</h2>
         <input type="file" id="jsonFileInput" title="Choose JSON file with Bigs, Littles data">
     </section>
 
     <section class="bubble-info-section">
         <h2 class="bubble-info-title" class = "title">Results:</h2>
-        <div id="results"></div>
+        <div id="results"></div> <!--More info will go here by /matching.js-->
     </section>
 </div>
 
