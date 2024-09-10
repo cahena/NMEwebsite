@@ -23,16 +23,63 @@
     padding: 0;
 }
 body {
-    background-color: var(--dark-neutral-color);
+    background-color: var(--dark-leaf-color);
 }
-section {
-    padding-top: 10vh;
-}
+
 #NME {
     color: var(--light-neutral-color);
 }
 #Exec {
     background-color: var(--light-neutral-color);
+}
+#timeline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+}
+.timeline-box {
+    background-color: lightblue;
+    padding: 20px;
+    border: 1px solid #333;
+    text-align: center;
+}
+.timeline-box1 {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border: 1px solid #333;
+    text-align: center;
+}
+.timeline-writing {
+    font-size: 2rem;
+    padding: 20px;
+    border: 1px solid #333;
+    grid-column: 3;   /* Stays in the 3rd column */
+    grid-row: 1 / span 4;  /* Spans across all 4 rows */
+    text-align: center;
+}
+#study-community-creative {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1%;
+}
+@media (max-width: 800px) {
+    #study-community-creative {
+        display: grid;
+        grid-template-columns: 1fr; /* Stack items vertically */
+    }
+
+}
+#nme-chapter-dues-communicate {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1%;
+}
+@media (max-width: 800px) {
+    #nme-chapter-dues-communicate {
+        display: grid;
+        grid-template-columns: 1fr; /* Stack items vertically */
+    }
 }
 #ExecPart2 {
     background-color: var(--dark-leaf-color);
@@ -40,6 +87,25 @@ section {
 }
 #History {
     background-color: var(--secondary-color);
+}
+#sdo-founding-title {
+    background-color: var(--dark-leaf-color);
+    color: var(--light-neutral-color);
+}
+#sdo-founding {
+    background-color: var(--light-neutral-color);
+    color: var(--dark-neutral-color);
+}
+#who-when-where {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+}
+@media (max-width: 500px) {
+    #who-when-where {
+        display: grid;
+        grid-template-columns: 1fr; /* Stack items vertically */
+    }
 }
 #AcademicSuccess {
     background-color: var(--light-neutral-color);
@@ -49,6 +115,17 @@ section {
 }
 #Contact {
 
+}
+#discord-roster-drive {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+}
+@media (max-width: 800px) {
+    #discord-roster-drive {
+        display: grid;
+        grid-template-columns: 1fr; /* Stack items vertically */
+    }
 }
 #Credits {
 
@@ -96,6 +173,7 @@ header {
 
 .navbar a, .header-logo {
     color: var(--light-neutral-color);
+    cursor: default;
 }
 .navbar a:hover {
     text-decoration: underline;
@@ -106,17 +184,18 @@ header {
 }
 
 
-#button {
-    margin: 1rem 0px;
-    padding: .5rem;
+.match-button {
+    margin: 1rem;
+    padding: .7rem;
     background-color: var(--secondary-color);
     border: none;
+    border-radius: 10px;
     cursor: pointer;
 }
-#button:hover {
+.match-button:hover {
     background-color: var(--third-color);
 }
-#button:hover a {
+.match-button:hover a {
     color: var(--light-neutral-color);
 }
 
@@ -155,20 +234,7 @@ header {
     background-color: var(--light-leaf-color);
 }
 
-/* GRID */
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1%;
-}
-@media (max-width: 800px) {
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr; /* Stack items vertically */
-    }
-
-}
 .grid-item {
     position: relative; /* So that buttons can be absolute */
 }
@@ -210,15 +276,19 @@ header {
 
 
 /* MATCHING */
+#match-title {
+    color: var(--dark-leaf-color);
+}
 .bubble-choice-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1%;
+    gap: 4%;
 }
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .bubble-choice-grid {
         display: grid;
         grid-template-columns: 1fr; /* Stack items vertically */
+        gap: 0%;
     }
 }
 #Upload-JSON-file {
@@ -247,6 +317,18 @@ header {
 }
 .important-link {
     color: blue;
+}
+#results {
+    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1%;
+}
+@media (max-width: 600px) {
+    #results {
+        display: grid;
+        grid-template-columns: 1fr; /* Stack items vertically */
+    }
 }
 
 footer {
