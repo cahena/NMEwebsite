@@ -8,7 +8,7 @@
         {
             "name": "Big 2",
             "preferenceSurvey": ["Little 3", "Little 2", "Little 1", "little 4"],
-            "slotsAvailable": 1
+            "slotsAvailable": 2
         },
         {
             "name": "Big 3",
