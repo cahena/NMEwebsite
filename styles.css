@@ -32,32 +32,7 @@ body {
 #Exec {
     background-color: var(--light-neutral-color);
 }
-#timeline {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) 1fr;
-    grid-template-rows: repeat(4, auto);
-    gap: 10px;
-}
-.timeline-box {
-    background-color: lightblue;
-    padding: 20px;
-    border: 1px solid #333;
-    text-align: center;
-}
-.timeline-box1 {
-    background-color: var(--secondary-color);
-    padding: 20px;
-    border: 1px solid #333;
-    text-align: center;
-}
-.timeline-writing {
-    font-size: 2rem;
-    padding: 20px;
-    border: 1px solid #333;
-    grid-column: 3;   /* Stays in the 3rd column */
-    grid-row: 1 / span 4;  /* Spans across all 4 rows */
-    text-align: center;
-}
+
 #study-community-creative {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
