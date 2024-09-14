@@ -24,6 +24,8 @@
 }
 body {
     background-color: var(--dark-leaf-color);
+    font-family: Helvetica, sans-serif;
+
 }
 
 #NME {
@@ -32,6 +34,7 @@ body {
 #Exec {
     background-color: var(--light-neutral-color);
 }
+
 
 #study-community-creative {
     display: grid;
@@ -112,9 +115,10 @@ img{
     margin-right: auto;
     width: 100%;
     height: auto;
+    transition: all 0.5s ease; /*for img logo buttons*/
 }
 .logo-button :hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .words, .mini-words {
     padding: 2rem;
@@ -310,4 +314,16 @@ footer {
     color: var(--light-neutral-color);
     text-align: center;
     padding-bottom: 2rem;
+}
+
+
+
+
+
+/* Responsive Google Slides, Google Maps, YouTube & Vimeo */
+/* https://chrisyee.ca/blog/responsive-google-slides/#:~:text=Just%20wrap%20the%20Google%20Slides%20embed%20code%20in,slides%20scale%20in%20proportion%20with%20your%20viewport%20window. */
+iframe[src*="docs.google.com"]{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
 }

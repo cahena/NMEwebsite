@@ -1,0 +1,63 @@
+{
+    "bigs": [
+        {
+            "name": "Big1",
+            "preferenceSurvey": ["Little2", "Little3", "Little1", "Little4"],
+            "slotsAvailable": 1
+        },
+        {
+            "name": "Big2",
+            "preferenceSurvey": ["Little1", "Little2", "Alyssa", "Little4"],
+            "slotsAvailable": 1
+        },
+        {
+            "name": "Big3",
+            "preferenceSurvey": ["Little1", "Little2", "Little4", "Little8"],
+            "slotsAvailable": 2
+        },
+        {
+            "name": "Big4",
+            "preferenceSurvey": ["Little3", "Little4", "Big2", "Little3"],
+            "slotsAvailable": 1
+        },
+        {
+            "name": "Big5",
+            "preferenceSurvey": ["Little8", "Little7", "Little3", "Little4"],
+            "slotsAvailable": 1
+        }
+    ],
+    "littles": [
+        {
+            "name": "Little1",
+            "preferenceSurvey": ["Big2", "Big3", "Big1"]
+        },
+        {
+            "name": "Little2",
+            "preferenceSurvey": ["Big1", "Big2", "Big5"]
+        },
+        {
+            "name": "Little3",
+            "preferenceSurvey": ["Big5", "Big1", "Big3"]
+        },
+        {
+            "name": "Little4",
+            "preferenceSurvey": ["Big2", "Big1", "Big3"]
+        },
+        {
+            "name": "Little5",
+            "preferenceSurvey": ["Big2", "Big1", "Big3"]
+        },
+        {
+            "name": "Little6",
+            "preferenceSurvey": ["Big2", "Big1", "Big3"]
+        },
+        {
+            "name": "Little7",
+            "preferenceSurvey": ["Big2", "Big1", "Big3"]
+        },
+        {
+            "name": "Little8",
+            "preferenceSurvey": ["Big5", "Big1", "Big3"]
+        }
+    ]
+}

@@ -91,7 +91,7 @@ function unpair(big, little)
 // Function to create matches.
 function createMatches(bigs, littles) 
 {
-    let changes = 1; // Loop until there are no changes made / all matches are stable.
+    let changes = 1; 
     while (changes === 1)
     {
         changes = 0;
@@ -114,26 +114,29 @@ function createMatches(bigs, littles)
                 }
                 else
                 {
-                    if (curr_big.slotsAvailable > 0)
-                    { // If the current big has available slots, pair.
-                        pair(curr_big, littles[i]);
-                        changes = 1;
-                        console.log("\nCHANGE MADE!!!!!\n");
-                        break; // Little found a pair, move on to next little. 
-
-
-                    }
-                    else
-                    {   // Otherwise, check if the new little is higher ranked on current big's pref. survey than the lowest ranked pair. 
-                        // If the new little is higher ranked, unpair old little and pair new little. 
-                        if (preferenceRankOf(curr_big, littles[i].name) < preferenceRankOf(curr_big, curr_big.pairs[curr_big.pairs.length - 1].name))
-                        {
-                            unpair(curr_big, curr_big.pairs[curr_big.pairs.length - 1]);
+                    if (preferenceRankOf(curr_big, littles[i].name) !== 100) //if little is on bigs pref.survey
+                    {
+                        if (curr_big.slotsAvailable > 0)
+                        { // If the current big has available slots, and the little is on the big's pref.survey then pair.
                             pair(curr_big, littles[i]);
                             changes = 1;
                             console.log("\nCHANGE MADE!!!!!\n");
                             break; // Little found a pair, move on to next little. 
-                        } 
+
+
+                        }
+                        else
+                        {   // Otherwise, check if the new little is higher ranked on current big's pref. survey than the lowest ranked pair. 
+                            // If the new little is higher ranked, unpair old little and pair new little. 
+                            if (preferenceRankOf(curr_big, littles[i].name) < preferenceRankOf(curr_big, curr_big.pairs[curr_big.pairs.length - 1].name))
+                            {
+                                unpair(curr_big, curr_big.pairs[curr_big.pairs.length - 1]);
+                                pair(curr_big, littles[i]);
+                                changes = 1;
+                                console.log("\nCHANGE MADE!!!!!\n");
+                                break; // Little found a pair, move on to next little. 
+                            } 
+                        }
                     }
 
                     console.log("\n----------------\n");
@@ -164,20 +167,22 @@ reader.onload = function(event) { // Called by document.getElementById('jsonFile
     // Display results: 
     const bigResultsDiv = document.getElementById("big-results");
     // Bigs Pairs:
-    //bigResultsDiv.innerHTML = "<h1>Big Pairs </h1>";
-    bigs.forEach(function(big) 
-    {
+    bigs.forEach(function(big) {
         bigResultsDiv.innerHTML += "<h3>" + big.name + " pairs: </h3>";
-        big.pairs.forEach(function(little) 
-        {
-            bigResultsDiv.innerHTML += "<p>- " + little.name + "</p>";
-        });
+
+        if (big.pairs.length > 0) {
+            big.pairs.forEach(function(little) {
+                bigResultsDiv.innerHTML += "<p>- " + little.name + "</p>";
+            });
+        } else {
+            bigResultsDiv.innerHTML += "<p>- NO PAIR</p>";
+        }
+
         bigResultsDiv.innerHTML += "<br>";
     });
 
     const littleResultsDiv = document.getElementById("little-results");
     // Littles Pairs:
-    //littleResultsDiv.innerHTML += "<h1>Little Pairs </h1>";
     littles.forEach(function(little) 
     {
         littleResultsDiv.innerHTML += "<h3>" + little.name + " pair: </h3>";
