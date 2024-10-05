@@ -123,7 +123,6 @@ function createMatches(bigs, littles)
                             console.log("\nCHANGE MADE!!!!!\n");
                             break; // Little found a pair, move on to next little. 
 
-
                         }
                         else
                         {   // Otherwise, check if the new little is higher ranked on current big's pref. survey than the lowest ranked pair. 

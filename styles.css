@@ -14,8 +14,6 @@
     --a1-color: ;
     --b1-color: ;
     --c1-color: ;
-
-    --terracotta-color: #c29673;
 }
 * {
     box-sizing: border-box;
@@ -25,17 +23,45 @@
 body {
     background-color: var(--dark-leaf-color);
     font-family: Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+li, a, button { /* all font stuff for logo and nav links */
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.5s ease;
 
 }
+header {
+    background-color: var(--dark-neutral-color);
+    display: flex;
+    justify-content: space-between; /* push left and right items to the far edges and the center item will evenly space between the two*/
+    align-items: center; /* centers all of the header together*/
+    padding: 10px 1rem 5px 1.5rem; /* top, right, bottom, left*/
+    position: sticky;
+    top:0;
+    z-index: 1000;
+}
+.navbar a, .header-logo {
+    color: var(--light-neutral-color);
+    cursor: default;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+.nav_links li {
+    display: inline-block;
+    margin: 0px 10px 0px; /* only on sides */
+}
+
+
 
 #NME {
     color: var(--light-neutral-color);
 }
 #Exec {
-    background-color: var(--light-neutral-color);
+    background-color: var(--third-color);
 }
-
-
 #study-community-creative {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -59,52 +85,23 @@ body {
         grid-template-columns: 1fr; /* Stack items vertically */
     }
 }
-#ExecPart2 {
-    background-color: var(--dark-leaf-color);
-    color: var(--light-neutral-color);
-}
+
+
 #History {
     background-color: var(--secondary-color);
 }
-#sdo-founding-title {
-    background-color: var(--dark-leaf-color);
-    color: var(--light-neutral-color);
-}
-#sdo-founding {
-    background-color: var(--light-neutral-color);
-    color: var(--dark-neutral-color);
-}
-#who-when-where {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3%;
-}
-@media (max-width: 500px) {
-    #who-when-where {
-        display: grid;
-        grid-template-columns: 1fr; /* Stack items vertically */
-    }
-}
+
 #AcademicSuccess {
-    background-color: var(--light-neutral-color);
+    background-color: var(--third-color);
 }
+
 #Socials {
-    background-color: var(--light-neutral-color);
+    background-color: var(--secondary-color);
 }
 #Contact {
 
 }
-#discord-roster-drive {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3%;
-}
-@media (max-width: 800px) {
-    #discord-roster-drive {
-        display: grid;
-        grid-template-columns: 1fr; /* Stack items vertically */
-    }
-}
+
 #Credits {
 
 }
@@ -120,46 +117,13 @@ img{
 .logo-button :hover {
     transform: scale(1.05);
 }
-.words, .mini-words {
+.words {
     padding: 2rem;
     text-align: center;
     font-size: 2rem;
 }
 img, div {
     padding: 2rem;
-}
-
-
-
-/* NAVBAR */
-
-li, a, button { /* all font stuff for logo and nav links */
-    font-weight: 500;
-    text-decoration: none;
-    transition: all 0.5s ease;
-
-}
-header {
-    background-color: var(--dark-neutral-color);
-    display: flex;
-    justify-content: space-between; /* push left and right items to the far edges and the center item will evenly space between the two*/
-    align-items: center; /* centers all of the header together*/
-    padding: 10px 1rem 5px 1.5rem; /* top, right, bottom, left*/
-    position: sticky;
-    top:0;
-    z-index: 1000;
-}
-
-.navbar a, .header-logo {
-    color: var(--light-neutral-color);
-    cursor: default;
-}
-.navbar a:hover {
-    text-decoration: underline;
-}
-.nav_links li {
-    display: inline-block;
-    margin: 0px 10px 0px; /* only on sides */
 }
 
 
@@ -178,6 +142,8 @@ header {
     color: var(--light-neutral-color);
 }
 
+
+
 /* https://www.w3schools.com/howto/howto_css_dropdown.asp */
 .drop-button {
     background-color: var(--secondary-color);
@@ -185,6 +151,7 @@ header {
     padding: 16px;
     font-size: 16px;
     border: none;
+    width: 100%;
 }
 .dropdown {
     position: relative;
@@ -194,8 +161,8 @@ header {
     display: none;
     position: absolute;
     background-color: var(--light-neutral-color);
-    min-width: 160px;
-    z-index: 10000;
+    
+    z-index: 100;
 }
 
 /* Change color of dropdown links on hover */
