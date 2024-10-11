@@ -59,43 +59,22 @@ header {
 #NME {
     color: var(--light-neutral-color);
 }
-#Exec {
-    background-color: var(--third-color);
-}
-#study-community-creative {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1%;
-}
-@media (max-width: 800px) {
-    #study-community-creative {
-        display: grid;
-        grid-template-columns: 1fr; /* Stack items vertically */
-    }
-
-}
-#nme-chapter-dues-communicate {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1%;
-}
-@media (max-width: 800px) {
-    #nme-chapter-dues-communicate {
-        display: grid;
-        grid-template-columns: 1fr; /* Stack items vertically */
-    }
+#Exec, #ExecNME {
+    background-color: var(--dark-neutral-color);
+    color: var(--light-neutral-color);
 }
 
-
-#History {
+#HistoryNME {
     background-color: var(--secondary-color);
 }
 
-#AcademicSuccess {
-    background-color: var(--third-color);
+#AcademicSuccessNME {
+    background-color: var(--dark-neutral-color);
+    color: var(--light-neutral-color);
+
 }
 
-#Socials {
+#SocialsNME {
     background-color: var(--secondary-color);
 }
 #Contact {
@@ -143,60 +122,6 @@ img, div {
 }
 
 
-
-/* https://www.w3schools.com/howto/howto_css_dropdown.asp */
-.drop-button {
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    width: 100%;
-}
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--light-neutral-color);
-    
-    z-index: 100;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content:hover {
-    background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .drop-button {
-    background-color: var(--light-leaf-color);
-}
-
-
-.grid-item {
-    position: relative; /* So that buttons can be absolute */
-}
-
-
-/* NME PAGE */
-
-
-/* EXEC - Sorority for women in STEM  */
-
-
-/* HISTORY */
-
-/* Academic Success */
-
-/* Socials & Networking */
 
 /* Contact */
 #blinged-logo {
