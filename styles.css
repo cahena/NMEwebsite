@@ -124,13 +124,7 @@ img, div {
 
 
 /* Contact */
-#blinged-logo {
-    padding-left: 20%;
-    padding-right: 20%;
-}
 #contact-list {
-    color: var(--light-neutral-color);
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,6 +133,9 @@ img, div {
 }
 #contact-list :hover {
     transform: scale(1.1);
+}
+.contact-item {
+    color: var(--light-neutral-color);
 }
 
 /* CREDITS */
