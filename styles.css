@@ -6,7 +6,6 @@
     --third-color: #a07ce1;
 
     --light-leaf-color: #909d6a;
-    --dark-leaf-color: #4C5D46;
 
     --a-color: ;
     --b-color: ;
@@ -21,7 +20,7 @@
     padding: 0;
 }
 body {
-    background-color: var(--dark-leaf-color);
+    background-color: var(--dark-neutral-color);
     font-family: Helvetica, sans-serif;
 }
 
@@ -147,7 +146,7 @@ img, div {
 
 /* MATCHING */
 #match-title {
-    color: var(--dark-leaf-color);
+    color: var(--dark-neutral-color);
 }
 .bubble-choice-grid {
     display: grid;
