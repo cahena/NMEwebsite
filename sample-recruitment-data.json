@@ -24,6 +24,16 @@
             "name": "Big5",
             "preferenceSurvey": ["Little8", "Little7", "Little3", "Little4"],
             "slotsAvailable": 1
+        },
+        {
+            "name": "Big6",
+            "preferenceSurvey": ["Little8", "Little7", "Little3", "Little4"],
+            "slotsAvailable": 2
+        },
+        {
+            "name": "Big7",
+            "preferenceSurvey": ["Little8", "Little7", "Little3", "Little4"],
+            "slotsAvailable": 1
         }
     ],
     "littles": [
@@ -49,15 +59,15 @@
         },
         {
             "name": "Little6",
-            "preferenceSurvey": ["Big2", "Big1", "Big3"]
+            "preferenceSurvey": ["Big6", "Big1", "Big3"]
         },
         {
             "name": "Little7",
-            "preferenceSurvey": ["Big2", "Big1", "Big3"]
+            "preferenceSurvey": ["Big7", "Big1", "Big3"]
         },
         {
             "name": "Little8",
-            "preferenceSurvey": ["Big5", "Big1", "Big3"]
+            "preferenceSurvey": ["Big6", "Big1", "Big3"]
         }
     ]
 }
