@@ -94,11 +94,8 @@ img{
     height: auto;
     transition: all 0.5s ease; /*for img logo buttons*/
 }
-.logo-button :hover {
-    transform: scale(1.05);
-}
 .words {
-    padding: 2rem;
+    padding: 1rem 2.5rem 3.5rem; /* top, sides, bottom*/
     text-align: center;
     font-size: 2rem;
 }
