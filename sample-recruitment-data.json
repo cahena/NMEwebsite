@@ -43,7 +43,7 @@
         },
         {
             "name": "Little2",
-            "preferenceSurvey": ["Big1", "Big2", "Big5"]
+            "preferenceSurvey": ["Big3", "Big2", "Big5"]
         },
         {
             "name": "Little3",
@@ -51,7 +51,7 @@
         },
         {
             "name": "Little4",
-            "preferenceSurvey": ["Big2", "Big1", "Big3"]
+            "preferenceSurvey": ["Big3", "Big1", "Big4"]
         },
         {
             "name": "Little5",
@@ -63,7 +63,7 @@
         },
         {
             "name": "Little7",
-            "preferenceSurvey": ["Big7", "Big1", "Big3"]
+            "preferenceSurvey": ["Big6", "Big1", "Big3"]
         },
         {
             "name": "Little8",
