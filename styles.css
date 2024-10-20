@@ -78,14 +78,13 @@ header {
 #SocialsNME {
     background-color: var(--secondary-color);
 }
-/* #Contact {
-
+#Contact {
+    font-family: Lucida Handwriting, sans-serif;
 }
 
 #Credits {
 
-} */
-
+}
 img{
     display: block;
     margin-left: auto;
