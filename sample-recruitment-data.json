@@ -1,73 +1,15 @@
 {
     "bigs": [
         {
-            "name": "Big1",
-            "preferenceSurvey": ["Little5", "Little3", "Little1", "Little4"],
-            "slotsAvailable": 1
-        },
-        {
-            "name": "Big2",
-            "preferenceSurvey": ["Little1", "Little2", "Alyssa", "Little4"],
-            "slotsAvailable": 1
-        },
-        {
-            "name": "Big3",
-            "preferenceSurvey": ["Little1", "Little2", "Little4", "Little8"],
-            "slotsAvailable": 2
-        },
-        {
-            "name": "Big4",
-            "preferenceSurvey": ["Little3", "Little6", "Big2", "Little3"],
-            "slotsAvailable": 1
-        },
-        {
-            "name": "Big5",
-            "preferenceSurvey": ["Little8", "Little7", "Little3", "Little4"],
-            "slotsAvailable": 1
-        },
-        {
-            "name": "Big6",
-            "preferenceSurvey": ["Little8", "Little7", "Little3", "Little4"],
-            "slotsAvailable": 2
-        },
-        {
-            "name": "Big7",
-            "preferenceSurvey": ["Little8", "Little7", "Little3", "Little4"],
+            "name": "Big",
+            "preferenceSurvey": ["little", "little", "little", "little", "little", "little", "little"],
             "slotsAvailable": 1
         }
     ],
     "littles": [
         {
-            "name": "Little1",
-            "preferenceSurvey": ["Big2", "Big3", "Big1"]
-        },
-        {
-            "name": "Little2",
-            "preferenceSurvey": ["Big3", "Big2", "Big5"]
-        },
-        {
-            "name": "Little3",
-            "preferenceSurvey": ["Big5", "Big1", "Big3"]
-        },
-        {
-            "name": "Little4",
-            "preferenceSurvey": ["Big3", "Big1", "Big4"]
-        },
-        {
-            "name": "Little5",
-            "preferenceSurvey": ["Big2", "Big1", "Big3"]
-        },
-        {
-            "name": "Little6",
-            "preferenceSurvey": ["Big6", "Big1", "Big4"]
-        },
-        {
-            "name": "Little7",
-            "preferenceSurvey": ["Big6", "Big1", "Big3"]
-        },
-        {
-            "name": "Little8",
-            "preferenceSurvey": ["Big6", "Big1", "Big3"]
+            "name": "Little",
+            "preferenceSurvey": ["big", "big", "big", "big", "big", "big", "big"]
         }
     ]
 }
