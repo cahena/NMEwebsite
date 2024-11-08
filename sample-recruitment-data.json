@@ -1,15 +1,37 @@
 {
     "bigs": [
         {
-            "name": "Big",
-            "preferenceSurvey": ["little", "little", "little", "little", "little", "little", "little"],
+            "name": "Big1",
+            "preferenceSurvey": ["little1", "little2", "little3"],
             "slotsAvailable": 1
+        },
+        {
+            "name": "Big2",
+            "preferenceSurvey": ["little3", "little2", "little1"],
+            "slotsAvailable": 1
+        },
+        {
+            "name": "Big3",
+            "preferenceSurvey": ["little2", "little1", "little4"],
+            "slotsAvailable": 2
         }
     ],
     "littles": [
         {
-            "name": "Little",
-            "preferenceSurvey": ["big", "big", "big", "big", "big", "big", "big"]
+            "name": "Little1",
+            "preferenceSurvey": ["big3", "big2", "big1"]
+        },
+        {
+            "name": "Little2",
+            "preferenceSurvey": ["big1", "big2", "big3"]
+        },
+        {
+            "name": "Little3",
+            "preferenceSurvey": ["big1", "big2", "big3"]
+        },
+        {
+            "name": "Little4",
+            "preferenceSurvey": ["big3", "big2", "big1"]
         }
     ]
 }
