@@ -41,16 +41,22 @@
         </section>
 
         <section class="bubble-info-section">
-            <h2 class="bubble-info-title">How To Set Up JSON File</h2>
+            <h2 class="bubble-info-title">What To Do! <br>How To Set Up JSON File</h2>
             <p>The JSON file containing data for the bigs and littles in this recruitment term has a specific layout you must follow to ensure the program can read the data accurately. 
                 There are two ways data can be represented. Curley brackets, {}, which represent objects and square brackets, [], which represent arrays. 
-                Objects are keys that have a value attatched to them. Arrays are a list of values separated by commas. 
+                Objects are keys that have a value attatched to them. Arrays are a list of values separated by commas. <br>
+                To set up a custom JSON file, just Download the Sample JSON File, open the Sample JSON File in an editer, and for each Big and Little copy paste this part: <br>
+                { <br>
+                    "name": "PersonsName", <br>
+                    "preferenceSurvey": ["Name1", "Name2", "3"], <br>
+                    "slotsAvailable": 1  (delete this line for littles)<br>
+                } <br>
             </p>
         </section>
     </section>
 
     <section class="bubble-info-section">
-        <h2 class="bubble-info-title">JSON File Structure</h2>
+        <h2 class="bubble-info-title">JSON File Structure <br>(reading optional)</h2>
         <p>
             The file structure consists of two main sections: "bigs" array and "littles" array. 
             Both sections contain an array of objects representing the members and associate members involved in the recruitment process.
