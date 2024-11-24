@@ -151,7 +151,7 @@ img, div {
     grid-template-columns: repeat(2, 1fr);
     gap: 4%;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .bubble-choice-grid {
         display: grid;
         grid-template-columns: 1fr; /* Stack items vertically */
